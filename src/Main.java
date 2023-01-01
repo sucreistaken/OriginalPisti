@@ -1,25 +1,14 @@
-import java.util.Scanner;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-    Deck deck1 = new Deck();
-    Game game1 = new Game();
-    Computer comp = new Computer();
-    deck1.Shuffle();
-    deck1.CuttheDeck();
-   //deck1.OyunBaslangic();
-   //game1.ChooseCard();
-   // deck1.PrinDeste();
-    deck1.OyunBaslangic();
-    game1.ChooseCard();
-    comp.CompChoose();
-
-
-
-
-
-
-
-
+    public static void main(String[] args) throws IOException {
+        Deck deck1 = new Deck();
+        PointsSystem playerr = new PointsSystem();
+        Player1play game1 = new Player1play();
+        Computer comp = new Computer();
+        deck1.Shuffle();
+        deck1.CuttheDeck();
+        PointsSystem.PointsSystem1();
+        PointsSystem.Results();
     }
 }
